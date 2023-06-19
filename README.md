@@ -6,6 +6,8 @@ https://github.com/rpyadav87/k8-nagp.git
 
 Docker hub URL:
 ==============
+https://hub.docker.com/repository/docker/ravi1387/k8-nagp/general
+
 docker pull ravi1387/k8-nagp
 
 Minikube command:
@@ -15,16 +17,17 @@ minikube dashboard
 
 Command to run:
 ===============
-1.kubectl apply -f .\mysql-configmap.yaml
-2.kubectl apply -f .\mysql-secrets.yaml
-3.kubectl apply -f .\k8-database.yaml   
-4.kubectl apply -f .\k8-serviceapi.yaml
-5.kubectl get services // this will not provide the EXTERNAL_IP but the external port is available kubectl get pods  
-Note: we can skip step 5 as service is exposed as NodePort on port 30080 
+1. kubectl apply -f .\mysql-configmap.yaml
+2. kubectl apply -f .\mysql-secrets.yaml
+3. kubectl apply -f .\k8-database.yaml   
+4. kubectl apply -f .\k8-serviceapi.yaml
+5. kubectl get services // this will not provide the EXTERNAL_IP but the external port is 
+   available kubectl get pods.
+   Note: we can skip step 5 as service is exposed as NodePort on port 30080 
 6. minikube ip // to get the external ip to access from outside
 7. Application Health check:
-GET curl http://minikube-external-ip:external-port/api/v1/health
-Example: curl 'http://172.24.160.22:30080/api/v1/health'
+   GET curl http://minikube-external-ip:external-port/api/v1/health
+   Example: curl 'http://172.24.160.22:30080/api/v1/health'
 
 URL Service API tier:
 ===================
