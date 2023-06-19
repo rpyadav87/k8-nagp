@@ -47,13 +47,13 @@ URL Service API tier:
    curl --location 'http://172.24.160.22:30080/api/v1/user/1' \
    --header 'Accept: application/json'
 
-create database:
+Create database:
 ================
 kubectl exec -it {mysqlpod}
 mysql -u root -p root
 create database users;
 
-Use ingress:
+Use Ingress:
 =============
 minikube addons enable ingress kubectl apply -f .\app-ingress.yaml
 
