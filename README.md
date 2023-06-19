@@ -12,8 +12,8 @@ docker pull ravi1387/k8-nagp
 
 Minikube command:
 ================
-minikube start
-minikube dashboard
+1. minikube start
+2. minikube dashboard
 
 Command to run:
 ===============
