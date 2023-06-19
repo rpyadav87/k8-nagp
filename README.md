@@ -49,8 +49,6 @@ URL Service API tier:
 
 Create database:
 ================
-kubectl exec -it {mysqlpod}
-mysql -u root -p root
 create database users;
 
 Use Ingress:
