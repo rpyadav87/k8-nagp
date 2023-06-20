@@ -66,6 +66,4 @@ minikube addons enable ingress kubectl apply -f .\app-ingress.yaml
    Provide Host name as minikube ip : 172.23.202.223 login as: docker /tcuser , now edit
 3. Now access w/o port: http://k8crudapp.info/api/v1/health
 
-Link:
-=======
-https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
+Reference: https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
