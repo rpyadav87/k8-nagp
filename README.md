@@ -14,6 +14,7 @@ Minikube command:
 ================
 1. minikube start
 2. minikube dashboard
+3. minikube ip
 
 Command to run:
 ===============
